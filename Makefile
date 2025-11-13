@@ -7,7 +7,7 @@ BUILD_DIR = build
 DOCS_DIR = docs
 
 # Исходники C++
-SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
+SOURCES = $(SRC_DIR)/main.cpp
 OBJECTS = $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SOURCES))
 EXECUTABLE = $(BUILD_DIR)/$(TARGET)
 

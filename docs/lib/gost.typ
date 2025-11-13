@@ -92,7 +92,7 @@
   
 
   show raw: set text(10pt, font: "JetBrains Mono")
-  show raw: set par(justify: false, leading: 1em)
+  //show raw: set par(justify: false, leading: 1em)
 
   body
 }
