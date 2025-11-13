@@ -32,9 +32,9 @@ void ArrayProcessor<T>::print(const std::string& message) const {
     std::cout << "Массив [размер: " << data.size() << "]: ";
     
     for (const auto& elem : data) {
-        std::cout << std::setw(8) << std::fixed << std::setprecision(2) << elem << " ";
+        std::cout << std::setw(4) << std::fixed << std::setprecision(2) << elem << " ";
     }
-    std::cout << std::endl << std::endl;
+    std::cout << std::endl;
 }
 
 template <typename T>
@@ -71,3 +71,8 @@ void ArrayProcessor<T>::processAll() {
     removeZeros();
     print("После операции 3 (удаление нулей):");
 }
+
+// Говорим компилятору сгенерировать код для нужных типов
+template class ArrayProcessor<int>;
+template class ArrayProcessor<double>;
+template class ArrayProcessor<float>;
